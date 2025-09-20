@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding-left: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+#container{
+    height: 100vh;
+    width: 100vw;
+}
+
+#navbar , #navboxes{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13%;
+    list-style: none;
+    padding: 20px 20px;
+    background-color: black;
+    position: fixed;
+}
+
+
+#input{
+    padding: 0px 15px;
+    height: 5vh;
+    width: 25vw;
+    border-radius: 20px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.2vw;
+    color: #fff;
+}
+
+#content-main{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: black; */
+}
+
+#music-Player{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: black;
+}
+
+#music-all-system{
+    height: 65%;
+    width: 25%;
+    /* background: rgba(255, 255, 255, 0.09); */
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.3px);
+    -webkit-backdrop-filter: blur(4.3px);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    /* background-color: black; */
+    /* color: #fff; */
+    color: #fff;
+}
+
+#song-Img{
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#content-like{
+    padding: 2px 28px;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8vw;
+}
+
+#img{
+    object-fit: cover;
+}
+
+.fa-heart{
+    font-size: 25px;
+    color: white;
+    
+}
+
+#controller{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 28px;
+}
+
+#range{
+    width: 90%;
+    height: 10%;
+}
+
+#music-controller{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    font-size: 2vw;
+}
+
+#pause{
+    display: none;
+}
+
+.like{
+    color: red;
+}
+
+.fa-volume-high{
+    color: #fff;
+}
+
+#volume-controller{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+#vol{
+    height: 10%;
+    width: 15vw;
+}
+
+@media(max-width : 480px){
+
+    #navbar{
+        display: none;
+    }
+
+    #content-like{
+        font-size: 2.5vw;
+    }
+
+    #music-all-system{
+        width: 90%;
+    }
+
+    #music-controller{
+        font-size: 5vw;
+    }
+
+    #vol{
+        width: 30vw;
+        margin: 5px;
+    }
+
+
+}
+
+
+
+
