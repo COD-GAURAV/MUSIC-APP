@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SONG.MP</title>
-  <link rel="icon" type="image/x-icon" href="https://img.freepik.com/premium-vector/colorful-musical-note-art-with-vibrant-splashes-musical-note-black-surrounded_53876-651215.jpg?semt=ais_incoming&w=740&q=80">
+  <title>MELODY BOX</title>
+  <link rel="icon" type="image/x-icon" href="https://www.freepik.com/icon/headphone_3580800#fromView=keyword&page=1&position=50&uuid=7c83230d-bef6-4d86-a9d1-c28ef5c47569">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
@@ -14,8 +14,8 @@
     <nav id="navbar">
 
       <ul id="navboxes">
-        <li class="nav-heading"><a href="">SONG.MP</a></li>
-        <li class="nav-heading input"><input type="text" id="input"></li>
+        <li class="nav-heading"><a href="">MELODY BOX</a></li>
+        <li class="nav-heading input"><input type="text" id="input" autocomplete="off" placeholder="SEARCH SONGS"></li>
         <li class="nav-heading"><a href="">HOME</a></li>
         <li class="nav-heading"><a href="">SIGN UP</a></li>
         <li class="nav-heading"><a href="">LOG IN</a></li>
@@ -58,7 +58,7 @@
         
 
           <div id="list-mp3">
-            <audio src="" id="song"></audio>
+            <audio src="music list/courtside.mpeg" id="song"></audio>
           </div>
          
 
@@ -68,7 +68,28 @@
           <span><i class="fa-solid fa-volume-high" id="volume"></i></span>
           <input type="range" name="" id="vol" min="0" max="1" step="0.01">
         </div>
+        <div id="detail">
+          <i class="fa-solid fa-circle-info" id="dtl"></i>
+        </div>
        
+      </div>
+      <div id="detail-content">
+          <i class="fa-solid fa-xmark" id="cross"></i>
+          <div id="pic">
+            <img src="" alt="" id="sev" height="90%">
+          </div>
+
+          <div id="content-Info">
+            <span class="cons" id="songIn">SONG:</span>
+            <span class="cons" >ARTIST: <a href="" id="artist" target="_main"></a></span>
+            <span class="cons" id="year">YEAR:</span>
+            <span class="cons" id="dur">DURATION:</span>
+            <span class="cons" id="lang"></span>
+          </div>
+      </div>
+
+      <div id="options">
+        
       </div>
     </main>
 

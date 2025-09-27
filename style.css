@@ -8,12 +8,15 @@ body{
     font-family: "New Amsterdam", sans-serif;
     font-weight: 400;
     font-style: normal;
+    
 
 }
 
 #container{
     height: 100vh;
     width: 100vw;
+    /* background: linear-gradient(135deg, #141e30, #243b55); */
+    background-color: black;
 }
 
 #navbar , #navboxes{
@@ -25,8 +28,8 @@ body{
     gap: 13%;
     list-style: none;
     padding: 20px 20px;
-    background-color: black;
     position: fixed;
+    border-bottom: 1px solid white;
 }
 
 
@@ -34,13 +37,22 @@ body{
     padding: 0px 15px;
     height: 5vh;
     width: 25vw;
-    border-radius: 20px;
+    border-radius: 15px;
+    border: none;
 }
 
 a{
     text-decoration: none;
     font-size: 1.2vw;
     color: #fff;
+}
+
+#NO-Search{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 #content-main{
@@ -57,7 +69,7 @@ a{
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    background-color: black;
+    
 }
 
 #music-all-system{
@@ -74,8 +86,9 @@ a{
     color: #fff;
 }
 
-#song-Img{
+#song-Img , #pic{
     height: 30vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,7 +103,7 @@ a{
     font-size: 0.8vw;
 }
 
-#img{
+#img , #sev{
     object-fit: cover;
 }
 
@@ -147,9 +160,114 @@ a{
     width: 15vw;
 }
 
+
+#detail{
+    position: absolute;
+    top: 13%;
+    right: 1%;
+}
+
+#cross{
+    position: absolute;
+    top: 1.5%;
+    right: 2.5%;
+}
+
+#dtl{
+    color: white;
+    font-size: 1vw;
+}
+
+#detail-content{
+    height: 85vh;
+    width: 25vw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 12%;
+    right: 0.5%;
+    display: none;
+     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.3px);
+    -webkit-backdrop-filter: blur(4.3px);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    /* background-color: black; */
+    /* color: #fff; */
+    color: #fff;
+}
+
+#content-Info{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+}
+
+.cons{
+    margin-top: 5px;
+}
+
+#options{
+    display: none;
+    align-items: center;
+     flex-direction: column;
+    justify-content: baseline;
+    position: absolute;
+    top: 10.5%;
+    left: 19%;
+    height: 40%;
+    width: 30%;
+    border-radius: 10px;
+    overflow-y: auto;
+    background-color: black;
+    z-index: 1;
+    /* background-color: black; */
+    /* color: #fff; */
+    color: #fff;
+}
+
+::-webkit-scrollbar{
+    overflow: hidden;
+}
+
+.option-content{
+   display: flex;
+    height: 30%;
+    width: 90%;
+    gap: 25px;
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.songInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+#Nosearch{
+    display: none;
+}
+
+
 @media(max-width : 480px){
 
-    #navbar{
+    .nav-heading{
+        display: none;
+    }
+
+    .input{
+        display: flex;
+    }
+
+    #input{
+        width: 70vw;
+    }
+
+    #detail-content{
         display: none;
     }
 
@@ -168,6 +286,12 @@ a{
     #vol{
         width: 30vw;
         margin: 5px;
+    }
+
+    #options{
+        height: 100vh;
+        width: 100vw;
+        left: 0;
     }
 
 
