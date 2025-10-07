@@ -20,6 +20,7 @@ const yearInfo = document.getElementById("year");
 const durationInfo = document.getElementById("dur");
 const options = document.getElementById("options");
 const container = document.getElementById("content-main");
+const crossSearch = document.getElementById("crossSearch")
 
 let songs = [
   {
@@ -1062,16 +1063,36 @@ function optionStatus(list) {
       options.style.display = `none`;
       inputBox.value = ``;
       options.innerHTML = ``;
+      crossSearch.style.display = `none`
       optionStatus(songs);
     });
   });
 }
+
+
 
 optionStatus(songs);
 
 inputBox.addEventListener("focus", (e) => {
   options.style.display = `flex`;
 });
+
+let width = window.innerWidth
+
+if(width < 480){
+  inputBox.addEventListener("focus", (e) => {
+    options.style.display = `flex`;
+    crossSearch.style.display = `flex`
+  });
+
+  crossSearch.addEventListener("click",(e)=>{
+    options.style.display = `none`;
+    crossSearch.style.display = `none`
+  })
+}
+
+
+console.log(crossSearch)
 
 container.addEventListener("click", (e) => {
   options.style.display = `none`;
@@ -1110,6 +1131,8 @@ inputBox.addEventListener("input", (e) => {
     options.style.alignItems = `center`;
   }
 });
+
+
 
 // log-in section//
 
@@ -1393,3 +1416,4 @@ inputBox.addEventListener("input", (e) => {
 //     document.querySelector(".landing").style.display = `none`;
 //     document.querySelector("#container").style.display = `flex`;
 // }
+

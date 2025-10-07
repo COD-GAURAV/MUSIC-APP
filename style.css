@@ -96,6 +96,14 @@ body{
     border: none;
 }
 
+
+#crossSearch{
+    display: none;
+    color: white;
+    position: absolute;
+    top: 5%;
+    right: 5%;   
+}
 a{
     text-decoration: none;
     font-size: 1.2vw;
@@ -428,6 +436,15 @@ footer{
         width:40%;
     }
 
+    #crossSearch{
+    display: none;
+    color: white;
+    position: absolute;
+    top: 40%;
+    right: 3%;
+    cursor: pointer;   
+}
+
     .nav-heading{
         display: none;
     }
@@ -466,6 +483,16 @@ footer{
         width: 100vw;
         left: 0;
     }
+    .option-content {
+    display: flex;
+    height: 10%;
+    width: 90%;
+    gap: 25px;
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
     
     .mess{
         padding: 5px 5px;
